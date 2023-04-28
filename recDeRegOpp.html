@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Registros Oportunidades">
+        <div class="slds-m-around_medium">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Amount</th>
+          <th>Fase</th>
+          <th>Data de Criação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <template for:each={oportunidades} for:item="oportunidade">
+          <tr key={oportunidade.Id}>
+            <td>{oportunidade.Id}</td>
+            <td>{oportunidade.Name}</td>
+            <td>{oportunidade.Amount}</td>
+            <td>{oportunidade.StageName}</td>
+            <td>{oportunidade.CreatedDate}</td>
+          </tr>
+        </template>
+      </tbody>
+    </table>
+</div>
+</lightning-card>
+  </template>

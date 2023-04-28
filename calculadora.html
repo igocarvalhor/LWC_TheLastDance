@@ -1,0 +1,25 @@
+<template >
+
+    <lightning-card title="Calculadora Urameshi">
+    <div class="slds-m-around_medium">
+    <div class="container">
+        
+      <div class="input-wrapper">
+        <input type="number" step="any" placeholder="Insira o primeiro número" value={number1} oninput={handleNumber1Change}></input>
+        <input type="number" step="any" placeholder="Insira o segundo número" value={number2} oninput={handleNumber2Change}></input>
+      </div>
+      <div class="button-wrapper">
+        <button onclick={handleAddition}>+</button>
+        <button onclick={handleSubtraction}>-</button>
+        <button onclick={handleMultiplication}>*</button>
+        <button onclick={handleDivision}>/</button>
+        <button onclick={handleClear}>Clear</button>
+        <button onclick={handleEquals}>=</button>
+      </div>
+      <div class="result">{result}</div>
+      <div class="error">{error}</div>
+    </div>
+</div>
+</lightning-card>
+  </template>
+  

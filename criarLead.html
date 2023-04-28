@@ -1,0 +1,23 @@
+<template>
+  <lightning-card title="Criar Lead">
+    <div class="slds-m-around_medium">
+      <lightning-record-edit-form object-api-name="Lead" onsubmit={handleSubmit}>
+        <div class="slds-grid slds-wrap slds-gutters">
+          <div class="slds-col slds-size_1-of-2">
+            <lightning-input-field field-name="Company" required></lightning-input-field>
+            <lightning-input-field field-name="AnnualRevenue" required></lightning-input-field>
+            <lightning-input-field field-name="Rating"></lightning-input-field>
+          </div>
+          <div class="slds-col slds-size_1-of-2">
+            <lightning-input-field field-name="MobilePhone" required></lightning-input-field>
+            <lightning-input-field field-name="Phone" required></lightning-input-field>
+          </div>
+        </div>
+        <div class="slds-m-top_medium">
+          <lightning-button variant="brand" type="submit" label="Criar" onclick={navigateToRecord}></lightning-button>
+          <lightning-button variant="neutral" type="reset" label="Limpar" onclick={handleReset}></lightning-button>
+        </div>
+      </lightning-record-edit-form>
+    </div>
+  </lightning-card>
+</template>

@@ -37,6 +37,7 @@
     background-color: #7274f5;
     cursor: pointer;
     transition: background-color 0.3s;
+    color: white;
   }
   
   .button-wrapper button:hover {
